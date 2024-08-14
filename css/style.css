@@ -1,0 +1,161 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+li a {
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover {
+    color: #ccc;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-mountains-landscape_23-2151151082.jpg?t=st=1723630581~exp=1723634181~hmac=219b3b7e72421d27a6a2581893bced2f77e4f6de57f3c99bbbeea1f9fc07374d&w=826);
+    width: 100%;
+    height: 50vh;
+    padding: 5%;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 20px; 
+}
+
+button {
+    border: none;
+    background-color: teal;
+    padding: 13px;
+    border-radius: 7px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover {
+    background-color: darkcyan; 
+    transform: scale(1.05); 
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+section aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+section aside ul li {
+    border-radius: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.747);
+    background-color: purple;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+    cursor: pointer;
+}
+section aside ul li:hover{
+    transform: scale(1.05);
+    color: wheat;
+
+}
+main .video-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20%;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+iframe {
+    width: 80vh;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+main .map {
+    display: flex;
+    flex-direction: column;
+}
+section .map iframe {
+    width: 100%;
+    height: 50vh;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    background-color: teal;
+    width: 20%;
+    color: white;
+    border-radius: 20px 0px 20px 0px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+    cursor: pointer;
+}
+
+h2:hover {
+    transform: scale(1.05);
+}
+footer {
+    display: flex;
+    flex-direction: none;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer .info ul li {
+    margin-top: 25px;
+}
+.address {
+    color: white;
+    margin-left: 20%;
+}
+.address p {
+    margin-top: 10px;
+}
